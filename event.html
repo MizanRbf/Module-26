@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handler</title>
+</head>
+<body>
+  <h1 id="page-title">Event Handler</h1>
+  <button id="update-title">Update title</button>
+<br>
+<br>
+<p id="blank">No Name</p>
+<input type="text" id="input">
+<button id="input-btn">update name</button>
+
+  <script>
+   document.getElementById('input-btn').addEventListener('click', function(){
+    const Input = document.getElementById('input');
+    const Name = Input.value;
+    const newName = document.getElementById('blank');
+    newName.innerText = Name;
+   })
+  </script>
+  <script src="dom2.js"></script>
+</body>
+</html>
